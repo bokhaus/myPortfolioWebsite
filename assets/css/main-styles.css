@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+.flexbox-container0ne {
+    display: flex;
+    width: 100%;
+    background-color: dodgerblue;
+    height: 1em;
+}
