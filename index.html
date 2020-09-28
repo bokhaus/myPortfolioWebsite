@@ -1,89 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/assets/css/main-styles.css">
-    <link rel="stylesheet" def href="/assets/js/scripts.js">
-
-    <title>Brian Bok</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I am Brain Bok</title>
 </head>
 <body>
-  
-  <!-- <h2>Vertical Navigation Bar</h2>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="sidebar">
+    <a href="#" class="bar-item button">
+      <i class=""></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="bar-item button">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="bar-item button">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </a>
+    <a href="#contact" class="bar-item button">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-  </ul> -->
-
-  <div class="flexbox-container0ne">
-    <div class="containerOne-child" id="head">
-        1
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="navbar-top-container" id="topNavbar">
+    <div class="navbar-top">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
   </div>
 
-  <div class="flexbox-containerTwo" id="containerTwo">
-      <div class="containerTwo-child">
-          2
+
+
+  <!-- About Section -->
+  <div class="about-content" id="about">
+    <h2 class="header-light-gray">My Name</h2>
+    <hr style="width:200px" class="body-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="header-light-gray">My Skills</h3>
+    <p class="skills-wide">Photography</p>
+    <div class="graph-white">
+      <div class="graph-dark-gray" style="height:28px;width:95%"></div>
+    </div>
+    <p class="skills-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="graph-dark-gray" style="height:28px;width:85%"></div>
+    </div>
+    <p class="skills-wide">Photoshop</p>
+    <div class="graph-white">
+      <div class="graph-dark-gray" style="height:28px;width:80%"></div>
+    </div><br>
+
+    <button class="resume-button">
+      <i class="download-button-gray"></i> Download Resume
+    </button>
+
+    <!-- Portfolio Section -->
+    <!-- Use flexbox instead Images with 50% round -->
+    <div class="project-content" id="projects">
+      <h2 class="header-light-gray">Projects</h2>
+      <hr style="width:200px" class="body-opacity">
+
+      <!-- Grid for photos -->
+      <div class="row" style="margin:0 -16px">
+        <div class="half">
+          <img src="/w3images/wedding.jpg" style="width:100%">
+          <img src="/w3images/rocks.jpg" style="width:100%">
+          <img src="/w3images/sailboat.jpg" style="width:100%">
+        </div>
+
+        <div class="half">
+          <img src="/w3images/underwater.jpg" style="width:100%">
+          <img src="/w3images/chef.jpg" style="width:100%">
+          <img src="/w3images/wedding.jpg" style="width:100%">
+          <img src="/w3images/p6.jpg" style="width:100%">
+        </div>
+      <!-- End project grid -->
       </div>
-      <div class="containerTwo-child">
-          3
-      </div>
-      <div class="containerTwo-child">
-          4
-      </div>
+    <!-- End Portfolio Section -->
+    </div>  
+
+    <!-- Contact Section -->
+    <div class="contact-content text-gray" id="contact">
+      <h2 class="header-light-gray">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="contact-section">
+        <p><i class="map-marker basic-text-light-gray hover-opacity"></i> Holgate, Ohio</p>
+        <p><i class="phone basic-text-light-gray hover-opacity"></i> Phone: 419-438-1138</p>
+        <p><i class="email basic-text-light-gray hover-opacity"> </i> Email: brian.bokusmc@gmail.com</p>
+        <p><i class="linkedin basic-text-light-gray hover-opacity"></i></p>
+      </div><br>
+      <p>Let's get in touch. Send me a message:</p>
+
+      <!-- Replace with Incognito form -->
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="mailbtn-light-grey" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    <!-- End Contact Section -->
+    </div>
+    
+      <!-- Footer -->
+    <footer class="footer-content text-gray ">
+      <i class="fa fa-facebook-official hover-opacity"></i>
+      <i class="fa fa-instagram hover-opacity"></i>
+      <i class="fa fa-snapchat hover-opacity"></i>
+      <i class="fa fa-pinterest-p hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin hover-opacity"></i>
+    <!-- End footer -->
+    </footer>
+
+  <!-- END PAGE CONTENT -->
   </div>
-
-  <!-- Accordian -->
-  <div class="accordion">
-    <section class="accordion-item accordion-item--default">
-        <h1>Skills</h1>
-        <div class="accordion-item-content">
-          <p>Content for section Skills</p>
-          <p>This is my default state.</p>
-        </div>
-    </section>
-    <section class="accordion-item">
-        <h1>Projects</h1>
-        <div class="accordion-item-content">
-          <p>Content for section Projects</p>
-        </div>
-    </section>
-    <section class="accordion-item">
-        <h1>About</h1>
-        <div class="accordion-item-content">
-          <p>Content for section About</p>
-        </div>
-    </section>
-    <section  class="accordion-item">
-        <h1>Contact</h1>
-        <div class="accordion-item-content center">
-          <p>Content for section Contact</p>
-        </div>
-    </section>
-    <section class="accordion-item">
-        <h1>Resume</h1>
-        <div class="accordion-item-content center">
-
-          <div id="resume">
-            <a href="/assets/docs/Bok Stylized_Resume 2020-06.pdf" class="btn btn-dark" role="button" target="_blank">Resume</a>
-          </div>
-          
-        </div>
-    </section>
-  </div>
-  <!-- End Accordian -->
-
-  <!-- Footer -->
-  <div class="footer">
-    <h2>Footer</h2>
-</div>
+  
 </body>
 </html>
