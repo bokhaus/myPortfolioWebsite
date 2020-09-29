@@ -22,27 +22,38 @@
       <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
   </div>
-
   
-
-    
-  <!-- Main -->
-  <div class="main">
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <!-- Fixed - Full Length-->
-    <nav >
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <!-- Fixed - Full Length-->
+  <!-- <nav >
+    <ul class="sidebar">
+      <li><a class="active bar-item button" href="#home">Home</a></li>
+      <li><a class="bar-item button" href="#news">About</a></li>
+      <li><a class="bar-item button" href="#contact">Contact</a></li>
+      <li><a class="bar-item button" href="#about">About</a></li>
+    </ul>
+  </nav> -->
+<div class="flex-container">
+ 
+  <div class="row">
+    <div class="side">
       <ul class="sidebar">
         <li><a class="active bar-item button" href="#home">Home</a></li>
         <li><a class="bar-item button" href="#news">About</a></li>
         <li><a class="bar-item button" href="#contact">Contact</a></li>
         <li><a class="bar-item button" href="#about">About</a></li>
       </ul>
-    </nav>
+    </div>
+  
+
+    
+  <!-- Main -->
+  <div class="main">
     <!-- Page Content -->
     <div class="home-content" id="home">
       <!-- Header/Home -->
       <header class="home" id="home">
-        <h1 class="header-light-gray jumbo"><span class="hide-small">I am</span> Brian Bok.</h1>
+        <h1 class="jumbo"><span class="hide-small">I am</span> Brian Bok.</h1>
         <p>Photographer and Web Designer.</p>
         <img src="/assets/images/black-smoke-one.jpg" alt="black-smoke" class="image-background" width="992" height="1108">
       </header>
@@ -51,7 +62,7 @@
     <!-- About Section -->
     <div class="about-content" id="about">
       
-      <h2 class="header-light-gray">About</h2>
+      <h2 class="text-size">About</h2>
       <button class="resume-button">
         <i class="download-button-gray"></i> Download Resume
       </button>
@@ -62,7 +73,7 @@
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
 
-      <h3 class="header-light-gray">Skills</h3>
+      <h3 class="text-size">Skills</h3>
       <p class="skills-wide">Photography</p>
       <div class="graph-white">
         <div class="graph-dark-gray" style="height:28px;width:95%"></div>
@@ -80,7 +91,7 @@
     <!-- Portfolio Section -->
     <!-- Use flexbox instead Images with 50% round -->
     <div class="project-content" id="projects">
-      <h2 class="header-light-gray">Projects</h2>
+      <h2 class="text-size">Projects</h2>
       <hr style="width:200px" class="section-opacity">
 
       <!-- Grid for photos -->
@@ -103,7 +114,7 @@
     </div>  
 
     <!-- Contact Section -->
-    <div class="contact-content text-gray" id="contact">
+    <div class="contact-content " id="contact">
       <h2 class="header-light-gray">Contact Me</h2>
       <hr style="width:200px" class="section-opacity">
 
@@ -143,6 +154,8 @@
     <!-- End footer -->
   </div>
   <!-- End Main Div -->
+  <!--Flexcontainer  -->
+</div>
   <!-- END PAGE CONTENT -->
 
   <!-- JS -->
