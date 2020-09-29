@@ -3,31 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main-style.css">
+
+
   <title>I am Brian Bok</title>
 </head>
 <body>
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="sidebar">
-    <a href="#" class="bar-item button">
-      <i class=""></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="bar-item button">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="#photos" class="bar-item button">
-      <i class="fa fa-eye w3-xxlarge"></i>
-      <p>PHOTOS</p>
-    </a>
-    <a href="#contact" class="bar-item button">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-  </nav>
-
+  
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="navbar-top-container" id="topNavbar">
+  <div class="navbar-top" id="topNavbar">
     <div class="navbar-top">
       <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
       <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
@@ -36,33 +23,59 @@
     </div>
   </div>
 
+  
 
-
-  <!-- About Section -->
-  <div class="about-content" id="about">
-    <h2 class="header-light-gray">My Name</h2>
-    <hr style="width:200px" class="section-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="header-light-gray">My Skills</h3>
-    <p class="skills-wide">Photography</p>
-    <div class="graph-white">
-      <div class="graph-dark-gray" style="height:28px;width:95%"></div>
+    
+  <!-- Main -->
+  <div class="main">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <!-- Fixed - Full Length-->
+    <nav >
+      <ul class="sidebar">
+        <li><a class="active bar-item button" href="#home">Home</a></li>
+        <li><a class="bar-item button" href="#news">About</a></li>
+        <li><a class="bar-item button" href="#contact">Contact</a></li>
+        <li><a class="bar-item button" href="#about">About</a></li>
+      </ul>
+    </nav>
+    <!-- Page Content -->
+    <div class="home-content" id="home">
+      <!-- Header/Home -->
+      <header class="home" id="home">
+        <h1 class="header-light-gray jumbo"><span class="hide-small">I am</span> Brian Bok.</h1>
+        <p>Photographer and Web Designer.</p>
+        <img src="/assets/images/black-smoke-one.jpg" alt="black-smoke" class="image-background" width="992" height="1108">
+      </header>
     </div>
-    <p class="skills-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="graph-dark-gray" style="height:28px;width:85%"></div>
-    </div>
-    <p class="skills-wide">Photoshop</p>
-    <div class="graph-white">
-      <div class="graph-dark-gray" style="height:28px;width:80%"></div>
-    </div><br>
 
-    <button class="resume-button">
-      <i class="download-button-gray"></i> Download Resume
-    </button>
+    <!-- About Section -->
+    <div class="about-content" id="about">
+      
+      <h2 class="header-light-gray">About</h2>
+      <button class="resume-button">
+        <i class="download-button-gray"></i> Download Resume
+      </button>
+
+      <hr style="width:200px" class="section-opacity">
+      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <h3 class="header-light-gray">Skills</h3>
+      <p class="skills-wide">Photography</p>
+      <div class="graph-white">
+        <div class="graph-dark-gray" style="height:28px;width:95%"></div>
+      </div>
+      <p class="skills-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="graph-dark-gray" style="height:28px;width:85%"></div>
+      </div>
+      <p class="skills-wide">Photoshop</p>
+      <div class="graph-white">
+        <div class="graph-dark-gray" style="height:28px;width:80%"></div>
+      </div><br>
+    </div> 
 
     <!-- Portfolio Section -->
     <!-- Use flexbox instead Images with 50% round -->
@@ -116,20 +129,26 @@
       </form>
     <!-- End Contact Section -->
     </div>
-    
-      <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer-content text-gray ">
+      <p>My address and stuff.</p>
       <i class="fa fa-facebook-official hover-opacity"></i>
       <i class="fa fa-instagram hover-opacity"></i>
       <i class="fa fa-snapchat hover-opacity"></i>
       <i class="fa fa-pinterest-p hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin hover-opacity"></i>
-    <!-- End footer -->
     </footer>
-
-  <!-- END PAGE CONTENT -->
+    <!-- End footer -->
   </div>
-  
+  <!-- End Main Div -->
+  <!-- END PAGE CONTENT -->
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
