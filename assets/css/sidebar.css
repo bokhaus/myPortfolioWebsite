@@ -1,21 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-
-}
-body {
-    min-height: 100vh;
-    background-color:  #000000;  /* Black*/
-}
 
 /* Navigation */
 .sidebar {
     position: fixed;
-    width: 3.5%;
+    width: 2.5%;
     height: 100%;
     background: #242121; /* dark gray*/
     transition: 0.5s;
@@ -101,8 +88,6 @@ body {
 /* Media */
 @media (max-width: 1569px) {
     .sidebar {
-        /* left: -60px; */
-        /* left: -0px; */
         width: 4%;
     }
     .sidebar.active {
@@ -112,8 +97,6 @@ body {
 }
 @media (max-width: 1231px) {
     .sidebar {
-        /* left: -60px; */
-        /* left: -0px; */
         width: 4.5%;
     }
 }
@@ -123,12 +106,11 @@ body {
     }
     .sidebar.active {
         left: 0px;
-        width: 100%;
+        width: 20%;
     }
 }
 @media (max-width: 818px) {
     .sidebar {
-        /* left: -60px; */
         left: -60px;
     }
     .sidebar.active {

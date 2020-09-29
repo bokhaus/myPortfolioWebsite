@@ -1,57 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/sidebar.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sidebar</title>
-    
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">  
+  <link rel="stylesheet" href="/assets/css/sidebar.css">
+  <link rel="stylesheet" href="/assets/css/top-navbar.css">
+  <script src="/assets/js/scripts.js"></script>
+  <title>WorkingCopyResume</title>
 </head>
 <body>
-    <div class="sidebar">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span> <!--<i class="fa fa-user-circle-o" aria-hidden="true"></i>-->
-                    <span class="title">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-superpowers" aria-hidden="true"></i></span> <!--<i class="fa fa-bar-chart" aria-hidden="true"></i>-->
-                    <span class="title">Skills</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-level-up" aria-hidden="true"></i></span>
-                    <span class="title">Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                    <span class="title">Contact</span>
-                </a>
-            </li>
-        </ul>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="navbar-top" id="topNavbar">
+    <div class="navbar-top">
+      <a href="#" class="btn" style="width:25% !important">HOME</a>
+      <a href="#about" class="btn" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="btn" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="btn" style="width:25% !important">CONTACT</a>
     </div>
-    <div class="toggle" onclick="toggleMenu()"></div>
-    <script>
-        function toggleMenu(){
-            let sidebar = document.querySelector('.sidebar');
-            let toggle = document.querySelector('.toggle');
-            sidebar.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }
-    </script>
+  </div>
+
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></i></span>
+          <span class="title">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span> 
+          <span class="title">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-superpowers" aria-hidden="true"></i></span> 
+          <span class="title">Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-level-up" aria-hidden="true"></i></span>
+          <span class="title">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+          <span class="title">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="toggle" onclick="toggleMenu()"></div>
+  
+  <div class="main">
+
+    <!-- Header/Home -->
+    <section  class="section-info home" id="home">
+
+      <h1 class="jumbo"><span class="hide-small">I am</span> Brian Bok.</h1>
+      <p>Photographer and Web Designer.</p>
+      
+    </section>
+    
+    <!-- About -->
+    <section class="section-info about" id="about">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam harum eaque minima beatae, fugiat nulla sapiente optio.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section-info skills" id="skills">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam harum eaque minima beatae, fugiat nulla sapiente optio.</p>
+    </section>
+
+    <!-- Projects -->
+    <section class="section-info projects" id="projects">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam harum eaque minima beatae, fugiat nulla sapiente optio.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-info contact" id="contact">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam harum eaque minima beatae, fugiat nulla sapiente optio.</p>
+    </section>
+
+  </div>
+  
+  
 </body>
 </html>
