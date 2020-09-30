@@ -42,18 +42,13 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 2.5%;
-    padding: 1px 16px;
+    /* padding: 1px 16px; */
     height: 100%;
     border: 2px solid chartreuse;
 }
 .header{
     /* color: #faebd7; */
     border: 2px solid chocolate;
-}
-.jumbo {
-    /* color: #faebd7; */
-    text-align: center;
-    border: 2px solid cornflowerblue;
 }
 .section-info {
     /* color: #faebd7; */
