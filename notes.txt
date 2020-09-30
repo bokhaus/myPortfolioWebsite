@@ -1,9 +1,0 @@
-Colors Used:
-    Body / .sidebar ul li:hover 
-    background-color:  #000000;
-
-    Sidebar Background
-    background: #242121;
-
-    Text
-    color: #faebd7;
