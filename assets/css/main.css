@@ -16,7 +16,9 @@ body {
     min-height: 100%;
     background-color:  #000000;  /* Black*/
 }
-
+.home {
+    height: 1100px;
+}
 /* Type */
 .text-slider-items { 
     display: none; 
@@ -24,6 +26,7 @@ body {
 
 .heading { 
     margin-top: 200px; 
+    height: 1000;
     text-align: center; 
 } 
 
