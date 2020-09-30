@@ -23,14 +23,15 @@ body {
     height: 100%;
     border: 2px solid chartreuse;
 }
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
 .header{
     color: #faebd7;
-    border: 2px solid chocolate;
-}
-.jumbo {
-    color: #faebd7;
-    text-align: center;
-    border: 2px solid cornflowerblue;
+    border: 5px dotted slateblue;
 }
 .section-info {
     color: #faebd7;
