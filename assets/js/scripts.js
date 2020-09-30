@@ -16,8 +16,9 @@ if ($(".text-slider").length == 1) {
     var typed = new Typed(".text-slider", { 
         strings: typed_strings.split(", "), 
         typeSpeed: 70, 
+        
         loop: true, 
-        backDelay: 900, 
+        backDelay: 1500, 
         backSpeed: 30, 
     }); 
 } 
