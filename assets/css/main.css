@@ -16,6 +16,18 @@ body {
     min-height: 100%;
     background-color:  #000000;  /* Black*/
 }
+.fakeimg {
+    width: 450px;
+    height: 550px;
+    padding: 5px;
+    background-color: gray;
+}
+.fakeimg-two {
+    width: 450px;
+    height: 550px;
+    padding: 5px;
+    background-color: gray;
+}
 .home {
     height: 1100px;
 }
@@ -26,6 +38,7 @@ body {
 #heading img {
     padding: 15%;
     border: #faead6;
+    border: 2px solid coral;
 } 
 .heading { 
     margin-top: 200px; 
@@ -61,7 +74,7 @@ body {
 .flex-row-one {
     display: flex;
     flex-direction: row;
-    /* border: 3px solid turquoise; */
+    border: 3px solid turquoise;
 }
 .about {
     width: 50%;
@@ -76,16 +89,12 @@ body {
 }
 .parallax-one{
     display: flex;
+    flex-grow: 2;
     /* background-image: url(); */
     width: 35%;
     justify-content: center;
     align-items: center;
-}
-.fakeimg {
-    background-color: gray;
-    width: 200px;
-    height: 200px;
-    padding: 5px;
+    border: 2px solid violet;
 }
 /* Skills Section */
 .flex-row-two {

@@ -3,7 +3,7 @@
 .sidebar {
     /* display: none; */
     position: fixed;
-    width: 2.5%;
+    width: 3%;
     height: 100%;
     background: #242121; /* dark gray*/
     transition: 0.5s;
@@ -11,7 +11,7 @@
 }
 .sidebar:hover,
 .sidebar.active {
-    width: 10%;
+    width: 13%;
 }
 .sidebar ul {
     position: absolute;
