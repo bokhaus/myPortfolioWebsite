@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
+/*********** Overall CSS Attributes ***********/
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,14 @@ body {
     min-height: 100%;
     background-color:  #000000;  /* Black*/
 }
-.fakeimg {
+.section-info {
+    /* color: #faebd7; */
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid hotpink; */
+}
+.fakeimg-one {
     width: 450px;
     height: 550px;
     padding: 5px;
@@ -28,33 +36,8 @@ body {
     padding: 5px;
     background-color: gray;
 }
-.home {
-    height: 1100px;
-}
-/* Type */
-.text-slider-items { 
-    display: none; 
-} 
-#heading img {
-    padding: 15%;
-    border: #faead6;
-    border: 2px solid coral;
-} 
-.heading { 
-    margin-top: 200px; 
-    height: 1000;
-    text-align: center; 
-}
-.heading h1 { 
-    color: limegreen; 
-    font-size: 70px; 
-} 
-.heading h3 { 
-    color: #ffffff; 
-    font-size: 20px; 
-} 
 
-/* Main Body */
+/*********** Main Body ***********/
 .main {
     display: flex;
     flex-direction: column;
@@ -63,18 +46,60 @@ body {
     height: 100%;
     /* border: 2px solid chartreuse; */
 }
-.section-info {
-    /* color: #faebd7; */
-    text-align: center;
-    height: 600px;
-    width: 100%;
-    /* border: 2px solid hotpink; */
+
+/*********** Home Section ***********/
+.flex-column-one {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    border: 2px solid cornflowerblue;
 }
-/* About Section */
+.typewriter {
+    
+}
+/* Typewriter */
+.text-slider-items { 
+    display: none; 
+} 
+.heading { 
+    margin-top: 200px; 
+    /* width: 100%;
+    height: 100%; */
+    text-justify: center;
+    text-align: center; 
+    border: 2px dotted firebrick;
+}
+.heading h1 { 
+    color: limegreen; 
+    font-size: 70px; 
+    border: 2px solid tomato;
+} 
+.heading h3 { 
+    color: #ffffff; 
+    font-size: 20px; 
+}
+/* Image Heading */
+.image-home {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    border: 2px solid coral;
+}
+.image-home img {
+    height: 500px;
+    /* width: 992px; */
+    padding: 15%;
+    border: 2px solid green;
+}
+
+/*********** About Section ***********/
 .flex-row-one {
     display: flex;
     flex-direction: row;
-    border: 3px solid turquoise;
+    /* border: 3px solid turquoise; */
 }
 .about {
     width: 50%;
@@ -94,9 +119,10 @@ body {
     width: 35%;
     justify-content: center;
     align-items: center;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
 }
-/* Skills Section */
+
+/*********** Skills Section ***********/
 .flex-row-two {
     display: flex;
     flex-direction: row;
