@@ -1,6 +1,7 @@
 
 /* Navigation */
 .sidebar {
+    /* display: none; */
     position: fixed;
     width: 2.5%;
     height: 100%;
