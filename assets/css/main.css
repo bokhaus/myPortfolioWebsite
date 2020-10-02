@@ -24,7 +24,7 @@ body {
 .section-info {
     height: 600px;
     width: 100%;
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
 }
 
 
@@ -45,7 +45,7 @@ body {
     height: 120vh;
     justify-content: space-around;
     align-items: stretch;
-    outline: 5px solid cornflowerblue;
+    /* outline: 5px solid cornflowerblue; */
 }
 /* .typewriter {
     
@@ -96,7 +96,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 120vh;
-    outline: 3px solid greenyellow;
+    /* outline: 3px solid greenyellow; */
 }
 .about {
     width: 50%;
@@ -117,7 +117,7 @@ body {
     /* padding: .5rem; */
     background-color: gray;
     margin: 1rem;
-    outline: 10px solid green;
+    /* outline: 10px solid green; */
 }
 .parallax-one{
     display: flex;
@@ -135,14 +135,14 @@ body {
     flex-direction: row;
     height: 120vh;
     /* padding-top: 5rem; */
-    outline: 3px solid wheat;
     margin-bottom: -11.5rem;
+    /* outline: 3px solid wheat; */
 }
 .skills {
     width: 50%;
     height: 100%;
     margin-right: 3rem;
-    outline: 5px solid red;
+    /* outline: 5px solid red; */
 }
 .fakeimg-two {
     width: 450px;
@@ -150,7 +150,7 @@ body {
     padding: .5rem;
     background-color: gray;
     margin: 3rem;
-    outline: 10px solid green;
+    /* outline: 10px solid green; */
 }
 .skills h2{
     text-align: left;
@@ -184,11 +184,11 @@ body {
 } 
 .projects {
     width: 100%;
-    outline: 3px solid ivory;
+    /* outline: 3px solid ivory; */
 }
 .project-header {
     width: 100%;
-    outline: 2px solid purple;
+    /* outline: 2px solid purple; */
 }
 .project-links {
     display: flex;
@@ -204,13 +204,12 @@ body {
     background-color: gray;
     border-radius: 50%;
     margin: 3rem;
-    outline: 10px solid green;
+    /* outline: 10px solid green; */
 }   
 
 /*********** Contact Section ***********/
 .flex-row-four {
     display: flex;
-    flex-direction: row;
-    height: 120vh;
+    flex-flow: row nowrap;
     outline: 3px solid turquoise;
 } 
