@@ -11,10 +11,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">  
   <link rel="stylesheet" href="/assets/css/sidebar.css">
   <link rel="stylesheet" href="/assets/css/top-navbar.css">
+  <link rel="stylesheet" href="/assets/css/media-queries.css">
 
   <link rel="stylesheet" href="/assets/css/to-top-btn.css">
-
-  <script def src="/assets/js/scripts.js"></script>
 
   <title>WorkingCopyResume</title>
 
@@ -72,6 +71,9 @@
 
   <!-- Main -->
   <div class="main">
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
 
     <!-- Header/Home -->
     <section  class="flex-column-one" id="home">
@@ -140,9 +142,10 @@
           <!-- <div class="project-img fakeimg-three"></div> -->
 
           <!-- Bootstrap Buttons -->
-          <button type="button" class="fakeimg-three">HTML / CSS</button>
-          <button type="button" class="fakeimg-three">JavaSript</button>
-          <button type="button" class="fakeimg-three">GitHub</button>
+          <button type="button" class="fakeimg-three" onclick="document.location='html-css-projects.html'">HTML / CSS</button>
+          <button type="button" class="fakeimg-three" onclick="document.location='javascript-projects.html'">JavaSript</button>
+          <button type="button" class="fakeimg-three" onclick="document.location='angular-projects.html'">Angular</button>
+          <button type="button" class="fakeimg-three" onclick="document.location='https://github.com/bokhaus/ProgrammingPortfolio'">GitHub</button>
          
           <!-- <div class="project-img fakeimg-three"></div> -->
 
@@ -156,7 +159,7 @@
     <!-- Contact -->
     <div class="flex-row-four">
       <section class="section-info contact" id="contact">
-        <h2>Contact</h2>
+        <h2></h2>
           <!-- <div class="float-container-message" id="contact"> -->
             <div class="cognito">
               <script src="https://www.cognitoforms.com/s/hqHMGIhQC0aHPyBj4ydFNA"></script>
@@ -168,6 +171,7 @@
   </div>
   <!-- End Main -->
 
+
   <!-- Typed Script -->
   <!-- Import typed.min.js file from typed.js folder -->
   <script src="/node_modules/typed.js/lib/typed.min.js"></script> 
@@ -177,6 +181,7 @@
 
   <!-- Main JS -->
   <script src="/assets/js/scripts.js"></script>
+
   
 </body>
 </html>

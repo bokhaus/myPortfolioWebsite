@@ -1,0 +1,45 @@
+
+/* Media */
+@media (max-width: 1569px) {
+    .sidebar {
+        width: 4%;
+        
+    }
+    .sidebar.active {
+        left: 0px;
+        width: 15%;
+    }
+}
+@media (max-width: 1231px) {
+    .sidebar {
+        width: 4.5%;
+    }
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 5.5%;
+    }
+    .sidebar.active {
+        left: 0px;
+        width: 20%;
+    }
+}
+@media (max-width: 818px) {
+    .sidebar {
+        left: -60px;
+    }
+    .sidebar.active {
+        left: 0px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

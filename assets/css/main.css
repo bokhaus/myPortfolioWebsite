@@ -204,8 +204,7 @@ body {
     width: 10rem;
     height: 10rem;
     padding: .2rem;
-    background-image: url(/assets/images/code.jpg);
-    /* background-color: gray; */
+    background-color: gray;
     border-radius: 50%;
     margin: 3rem;
     /* outline: 10px solid green; */
