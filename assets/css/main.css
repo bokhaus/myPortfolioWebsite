@@ -133,14 +133,14 @@ body {
     align-items: space-around;
     width: 100%;
     height: 100vh;
-    outline: 3px solid greenyellow;
+    /* outline: 3px solid greenyellow; */
 }
 .parallax-two {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
-    outline: 2px solid powderblue;  
+    /* outline: 2px solid powderblue;   */
 }
 .fakeimg-two {
     width: 80%;
@@ -153,7 +153,7 @@ body {
     width: 50%;
     height: 70%;
     padding: 5rem 3rem;
-    outline: 3px solid pink;
+    /* outline: 3px solid pink; */
 }
 .skills h2{
     text-align: left;
@@ -167,7 +167,7 @@ body {
     text-align: center;
     margin: -6rem 0 1rem 50%;
     padding: .5rem;
-    outline: 2px solid sandybrown;
+    /* outline: 2px solid sandybrown; */
 }
 
 /*********** Project Section ***********/
@@ -175,7 +175,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    outline: 2px solid khaki;
+    /* outline: 2px solid khaki; */
 } 
 .projects {
     width: 100%;
@@ -209,7 +209,7 @@ body {
     width: 100%;
     height: 110vh;
     padding-top: 5rem;
-    outline: 3px solid turquoise;
+    /* outline: 3px solid turquoise; */
 } 
 
 
