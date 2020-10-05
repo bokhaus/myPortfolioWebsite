@@ -21,11 +21,7 @@ body {
     min-height: 100%;
     background-color:  #000000;  /* Black*/
 }
-.section-info {
-    height: 600px;
-    width: 100%;
-    /* border: 2px solid hotpink; */
-}
+
 
 
 /*********** Main Body ***********/
@@ -33,8 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: .5rem .5rem 0 3.5rem;
-    /* padding: 1px 16px; */
-    /* height: 100%; */
     /* border: 2px solid chartreuse; */
 }
 
@@ -47,9 +41,7 @@ body {
     align-items: stretch;
     /* outline: 5px solid cornflowerblue; */
 }
-/* .typewriter {
-    
-} */
+
 /* Typewriter */
 .text-slider-items { 
     display: none; 
@@ -85,7 +77,6 @@ body {
 .image-home img {
     display: flex; 
     height: 600px;
-    /* filter: grayscale(100%); */
     opacity: 50%;
     margin: 0 .5rem .5rem 0;
     padding: .5rem;
@@ -94,104 +85,107 @@ body {
 }
 
 /*********** About Section ***********/
-.flex-row-one {
+.section-info-about {
     display: flex;
     flex-direction: row;
-    height: 120vh;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
+    height: 100vh;
     /* outline: 3px solid greenyellow; */
 }
 .about {
-    width: 50%;
-    margin: 5rem;
+    width: 60%;
+    height: 60%;
+    padding: 5rem 3rem;
+    /* outline: 3px solid pink; */
 }
 .about h2{
     text-align: left;
-    margin-left: 5%;
-    /* padding: 0 .5rem; */
+    border-bottom: .3rem solid #242121;
 }
 .about p{
-    text-align: left;
-    margin-left: 5%;
+    text-align: justify;
 }
-.fakeimg-one {
-    width: 450px;
-    height: 550px;
-    /* padding: .5rem; */
-    background-color: gray;
-    margin: 1rem;
-    /* outline: 10px solid green; */
-}
-.parallax-one{
+.parallax-one {
     display: flex;
-    flex-grow: 2;
-    /* background-image: url(); */
-    width: 35%;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    /* outline: 2px solid violet; */
+    /* outline: 2px solid powderblue;   */
+}
+.fakeimg-one {
+    width: 80%;
+    height: 50%;
+    margin-top: -10rem;
+    background-color: gray;
+    align-items: center;
+    /* outline: 10px solid green; */
 }
 
+
 /*********** Skills Section ***********/
-.flex-row-two {
+.section-info-skills {
     display: flex;
     flex-direction: row;
-    height: 120vh;
-    /* padding-top: 5rem; */
-    margin-bottom: -11.5rem;
-    /* outline: 3px solid wheat; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
+    height: 100vh;
+    outline: 3px solid greenyellow;
+}
+.parallax-two {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid powderblue;  
+}
+.fakeimg-two {
+    width: 80%;
+    height: 80%;
+    background-color: gray;
+    align-items: center;
+    /* outline: 10px solid green; */
 }
 .skills {
     width: 50%;
-    height: 100%;
-    margin-right: 3rem;
-    /* outline: 5px solid red; */
-}
-.fakeimg-two {
-    width: 450px;
-    height: 550px;
-    padding: .5rem;
-    background-color: gray;
-    margin: 3rem;
-    /* outline: 10px solid green; */
+    height: 70%;
+    padding: 5rem 3rem;
+    outline: 3px solid pink;
 }
 .skills h2{
     text-align: left;
-    margin-left: 5%;
-    padding: .5rem;
+    border-bottom: .3rem solid #242121;
 }
 .skills p{
-    text-align: left;
-    margin-left: 5%;
+    text-align: justify;
 }
-.parallax-two{
-    display: flex;
-    flex-grow: 2;
-    /* background-image: url(); */
-    width: 45%;
-    justify-content: center;
-    align-items: center;
-    /* outline: 2px solid violet; */
+.slider {
+    width: 60%;
+    text-align: center;
+    margin: -6rem 0 1rem 50%;
+    padding: .5rem;
+    outline: 2px solid sandybrown;
 }
 
 /*********** Project Section ***********/
 .flex-row-three {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: -11.5rem; */
-    /* outline: 3px solid turquoise; */
+    height: 100vh;
+    outline: 2px solid khaki;
 } 
 .projects {
     width: 100%;
-    height: 120vh;
+    /* height: 120vh; */
     margin-top: 5rem;
     /* outline: 3px solid ivory; */
 }
-.project-header {
-    width: 100%;
-    /* outline: 2px solid purple; */
+.projects h2 {
+    width: 50%;
+    border-bottom: .3rem solid #242121;
 }
 .project-links {
     display: flex;
@@ -212,14 +206,11 @@ body {
 
 /*********** Contact Section ***********/
 .flex-row-four {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 120vh;
-    /* outline: 3px solid turquoise; */
+    width: 100%;
+    height: 100vh;
+    outline: 3px solid turquoise;
 } 
-.contact {
 
-}
 
 
 
