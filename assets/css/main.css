@@ -92,29 +92,30 @@ body {
     align-items: space-around;
     width: 100%;
     height: 100vh;
-    /* outline: 3px solid greenyellow; */
+    outline: 3px solid greenyellow;
 }
 .about {
     width: 60%;
-    height: 60%;
-    padding: 5rem 3rem;
+    height: 70%;
+    padding: 4rem 3rem;
     /* outline: 3px solid pink; */
 }
 .about h2{
     text-align: left;
+    padding: 3rem 3rem;
     border-bottom: .3rem solid #242121;
 }
 .about p{
     text-align: justify;
 }
-.parallax-one {
+.img-one  {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
     /* outline: 2px solid powderblue;   */
 }
-.fakeimg-one {
+.parallax-one{
     width: 80%;
     height: 50%;
     margin-top: -10rem;
@@ -133,27 +134,27 @@ body {
     align-items: space-around;
     width: 100%;
     height: 100vh;
-    /* outline: 3px solid greenyellow; */
+    outline: 3px solid greenyellow;
 }
-.parallax-two {
+.img-two {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
-    /* outline: 2px solid powderblue;   */
+    outline: 2px solid powderblue;  
 }
-.fakeimg-two {
+.parallax-two {
     width: 80%;
     height: 80%;
     background-color: gray;
     align-items: center;
-    /* outline: 10px solid green; */
+    outline: 10px solid green;
 }
 .skills {
     width: 50%;
     height: 70%;
-    padding: 5rem 3rem;
-    /* outline: 3px solid pink; */
+    padding: 3rem 3rem;
+    outline: 3px solid pink;
 }
 .skills h2{
     text-align: left;
@@ -167,25 +168,22 @@ body {
     text-align: center;
     margin: -6rem 0 1rem 50%;
     padding: .5rem;
-    /* outline: 2px solid sandybrown; */
+    outline: 2px solid sandybrown;
 }
 
 /*********** Project Section ***********/
-.flex-row-three {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    /* outline: 2px solid khaki; */
-} 
-.projects {
+.section-info-projects {
     width: 100%;
     /* height: 120vh; */
-    margin-top: 5rem;
-    /* outline: 3px solid ivory; */
+    outline: 3px solid ivory;
 }
-.projects h2 {
+#projects h2 {
     width: 50%;
+    margin: 3rem 0 0 3rem;
     border-bottom: .3rem solid #242121;
+}
+#projects p {
+    margin: 0 0 0 3rem;
 }
 .project-links {
     display: flex;
@@ -193,8 +191,11 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    /* outline: 2px solid wheat; */
 }
-.fakeimg-three {
+.img-three {
     width: 10rem;
     height: 10rem;
     padding: .2rem;
@@ -202,7 +203,25 @@ body {
     border-radius: 50%;
     margin: 3rem;
     /* outline: 10px solid green; */
-}   
+} 
+.project-resume {
+    width: 100%;
+    padding-bottom: 4.5rem;
+}
+.btn-resume {
+    background-color: #242121; /* Green #4CAF50*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px; 
+} 
+.btn-resume:hover {
+    background-color: #4CAF50;
+} 
 
 /*********** Contact Section ***********/
 .section-info-contact {
