@@ -6,4 +6,7 @@ Colors Used:
     background: #242121;
 
     Text
-    color: #faebd7;
+    color: #faebd7; (Antique White)
+
+    Slider 
+    color: #504545 (Medium Gray)

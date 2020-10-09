@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- Main Styles -->
   <link rel="stylesheet" href="/assets/css/main.css">  
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/assets/css/top-navbar.css">
   <link rel="stylesheet" href="/assets/css/to-top-btn.css">
   <link rel="stylesheet" href="/assets/css/media-queries.css">
+  <!-- <link rel="stylesheet" href="/assets/css/slider.css"> -->
 
   <title>WorkingCopyResume</title>
 
@@ -118,14 +119,14 @@
           
         <!-- Parallax 1 -->
         <div class="img-one">
-          <div class="parallax-one">Fake Image One</div>
+          <div class="parallax-about"></div>
         </div>
       
       </section>
     
       
       <!-- New Skill Section -->
-      <section class="skills-section">
+      <section class="skills-section" id="skills">
 
         <div class="parallax-skills">Parallax Container</div>
 
@@ -143,8 +144,42 @@
             debitis ut!.
             </p>
           </div>
-          <div class="skills-slider"><h2>Slider</h2>
-            <div class="fake-image"></div>
+          <div class="skills-slider">
+            <div class="slider">
+              
+              <h2>My Skills</h2>
+
+              <p id="html">HTML</p>
+              <div class="container">
+                <div class="skills html">90%</div>
+              </div>
+
+              <p>CSS</p>
+              <div class="container">
+                <div class="skills css">80%</div>
+              </div>
+              
+              <p>JavaScript</p>
+              <div class="container">
+                <div class="skills js">75%</div>
+              </div>
+              
+              <p>JAVA</p>
+              <div class="container">
+                <div class="skills java">80%</div>
+              </div>
+              
+              <p>SQL</p>
+              <div class="container">
+                <div class="skills sql">85%</div>
+              </div>
+
+              <p>EDI</p>
+              <div class="container">
+                <div class="skills edi">90%</div>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -184,12 +219,33 @@
 
     <!-- Contact -->
       <section class="section-info-contact" id="contact">
-        <h2></h2>
-          <div class="cognito">
+          <h2>Contact Me</h2>
+          <hr style="width:200px" class="w3-opacity">
+      
+          <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Holgate, Ohio</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Phone: (419) 438-1138</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>&nbsp; Email: brian.bokusmc@gmail.com</p>
+          </div><br>
+          <p>Let's get in touch. Send me a message:</p>
+          <!-- <div class="cognito">
             <script src="https://www.cognitoforms.com/s/hqHMGIhQC0aHPyBj4ydFNA"></script>
             <script>Cognito.load("forms", { id: "3" });</script>
-          </div>
+          </div> -->
+        
+          <form>
+            <p><input class="name" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="email" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="subject" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="message" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+              <button class="btn-btn-warning" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </p>
+          </form>
       </section>
+      <!-- End Contact -->
   </div>
   <!-- End Main -->
 

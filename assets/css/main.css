@@ -10,6 +10,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +19,7 @@
     
 }
 body {
-    min-height: 100%;
+    /* min-height: 100%; */
     background-color:  #000000;  /*Black*/
 }
 
@@ -97,7 +98,7 @@ body {
 .about {
     width: 60%;
     height: 70%;
-    padding: 3rem 3rem;
+    margin: 7.25rem 3rem;
     /* outline: 3px solid pink; */
 }
 .about h2{
@@ -115,99 +116,62 @@ body {
     align-items: center;
     /* outline: 2px solid powderblue;   */
 }
-.parallax-one {
+.parallax-about {
     /* The image used */
     background-image: url("https://picsum.photos/600/400?random=1"); /* https://unsplash.it/600/400, https://picsum.photos/id/237/600/400" */
     /* Set a specific width */
-    width: 80%;
-    /* min-width: 700px; */
+    /* width: 80%; */
+    min-width: 700px;
 
     /* Set a specific height */
-    height: 80%; 
-    /* min-height: 700px; */
+    /* height: 80%;  */
+    min-height: 700px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    outline: 2px solid darkolivegreen;
   }
 
-/*********** Skills Section ***********/
-.section-info-skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-around;
-    width: 100%;
-    height: 100vh;
-    /* outline: 3px solid greenyellow; */
-}
-.img-two {
-    
-    display: flex;
-    width: 50%;
-    /* height: 100%; */
-    justify-content: center;
-    align-items: center;
-    outline: 2px solid powderblue;  
-}
-.parallax-two {
+/* New Skills Section */
+/* Parent Flex Container */
+.parallax-skills {
     /* The image used */
-    background: url("/assets/images/Coding-Language.jpg"); /* https://unsplash.it/600/400, https://picsum.photos/id/237/600/400" */
+    background-image: url("https://picsum.photos/600/400?random=1"); /* https://unsplash.it/600/400, https://picsum.photos/id/237/600/400" */
     /* Set a specific width */
     /* width: 80%; */
-    /* min-width: 700px; */
-    width: 300px;
+    min-width: 700px;
 
     /* Set a specific height */
-    height: 80%; 
-    /* min-height: 700px; */
+    /* height: 80%;  */
+    min-height: 700px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    /* outline: 10px solid green; */
+    background-size: cover;
 }
-.skills {
-    width: 50%;
-    height: 70%;
-    padding: 3rem 3rem;
-    /* outline: 3px solid pink; */
-}
-.skills h2{
-    text-align: left;
-    border-bottom: .3rem solid #242121;
-}
-.skills p{
-    text-align: justify;
-}
-.slider {
-    width: 60%;
-    text-align: center;
-    margin: -6rem 0 1rem 50%;
-    padding: .5rem;
-    /* outline: 2px solid sandybrown; */
-}
-
-
-/* New Skills Section */
-/* Parent Flex Container */
 .skills-section {
     width: 100%;
-    background-color: #7e1d1d;
+    height: 100vh;
+    /* background-color: #7e1d1d; */
     margin: 40px auto 40px auto;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* outline: 2px solid white; */
 }
 /* Child Element */
 .parallax-skills {
     flex: 1;
+    height: 550px;
     text-align: center;
+    /* outline: 2px solid white; */
 }
 
 /* Child Element of skills-section & Parent Flex Container*/
@@ -216,15 +180,16 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3em;
 }
 /* Child Element */
 .skills-header {
     flex: 1;
-    /* width: 50%; */
     text-align: justify;
 }
 .skills-header h2 {
-    border-bottom: .3rem solid #faebd7;
+    border-bottom: .3rem solid #242121;
 }
 
 /* Child Element */
@@ -232,18 +197,60 @@ body {
     flex: 1;
     /* this flex is for fake image */
     display: flex;
-    margin: 50px 0 0 0;
 }
-.skills-slider h2{
-    margin: 0 20px 0 0;
+.slider {
+    flex: 1;
+    width: 50%;
+    margin-top: 4em;
+    /* outline: 2px solid white; */
 }
-.fake-image {
-    background-color: darkolivegreen;
-    height: 250px;
-    width: 1000px;
-    
+.slider h2 {
+    border-bottom: .3rem solid #242121;
+    /* outline: 2px solid darkolivegreen; */
 }
-
+.slider p {
+    padding-top: .5em;
+}
+#html {
+    padding-top: 1em;
+}
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+  
+.skills {
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    outline: 2 solid red;
+}
+  
+.html {
+    width: 90%; 
+    background-color: #504545; 
+}
+.css {
+    width: 80%; 
+    background-color: #504545;
+}
+.js {
+    width: 75%; 
+    background-color: #504545;
+}
+.java {
+    width: 80%; 
+    background-color: #504545;
+}
+.sql {
+    width: 85%; 
+    background-color: #504545;
+}
+.edi {
+    width: 90%; 
+    background-color: #504545;
+}
+/* #4CAF50 ,   #2196F3 , #f44336 ,  #aa2424 , #2c178b , #a51681*/
 
 
 /*********** Project Section ***********/
