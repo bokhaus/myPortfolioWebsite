@@ -300,6 +300,7 @@ body {
     border: 2px solid  #32cd32;
     width: 10rem;
     height: 10rem;
+    text-decoration: none;
     padding: .2rem;
     margin: 3rem;
     border-radius: 50%;
@@ -327,6 +328,7 @@ body {
 }
 .button-medium {
     font-size: 16px; 
+    text-decoration: none;
     background-color:#242121;
     border: 2px solid  #32cd32;
     width: 8rem;
@@ -396,17 +398,10 @@ input[type=text], select, textarea {
   
   /* Create two columns that float next to eachother */
   .column {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 75%;
     margin-top: 2rem;
     padding: 20px;
     /* outline: 2px solid firebrick; */
-  }
-  label {
-      /* margin-right: 100px; */
-      /* outline: 2px solid firebrick; */
   }
   .row {
       display: flex;
