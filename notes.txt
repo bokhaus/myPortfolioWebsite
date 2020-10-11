@@ -9,4 +9,4 @@ Colors Used:
     color: #faebd7; (Antique White)
 
     Slider 
-    color: #504545 (Medium Gray)
+    color: #504545 (Medium Gray) or #32cd32

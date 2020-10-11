@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/css/media-queries.css">
   <!-- <link rel="stylesheet" href="/assets/css/slider.css"> -->
 
-  <title>WorkingCopyResume</title>
+  <title>WorkingCopyPortfolio</title>
 
 </head>
 <body>
@@ -105,14 +105,10 @@
         <div class="about">
           <h2>About</h2>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam harum eaque minima beatae, fugiat nulla sapiente optio. Lorem ipsum dolor sit amet 
-          consectetur adipisicing elit. Eos repellat similique dolor consequuntur voluptatibus corrupti fuga dolores maxime, consequatur fugit quas nesciunt 
-          necessitatibus? Tenetur esse error cumque perferendis est maxime.Quos rem distinctio natus dolores quae commodi a odio laboriosam minus omnis qui, 
-          quod quidem doloribus officiis accusamus doloremque repudiandae quia nostrum officia, porro perspiciatis iusto. Sint expedita culpa porro?
-          Cumque, dignissimos in eligendi quos expedita error sequi nulla voluptates eos ducimus qui enim, sapiente, veniam numquam illo. Ab assumenda repellat 
-          deserunt similique. Quasi exercitationem impedit nam repellat reiciendis a? Quis, inventore! Voluptatum culpa ab dolorem dolorum voluptates? Ipsum 
-          accusamus optio ex fugiat itaque, delectus blanditiis eius. Architecto iure laudantium ullam aspernatur obcaecati est eius quam, expedita aliquam 
-          debitis ut!.
+            A disciplined individual with determination, drive, integrity, and an analytical mind,
+            seeking employment where education and capabilities as a Software Developer can
+            bring new energy to a team that strives to build and support custom apps specific to
+            client’s needs. 
           </p>
         </div>
         
@@ -144,6 +140,8 @@
             debitis ut!.
             </p>
           </div>
+
+          <!-- Progress Bar -->
           <div class="skills-slider">
             <div class="slider">
               
@@ -151,32 +149,32 @@
 
               <p id="html">HTML</p>
               <div class="container">
-                <div class="skills html">90%</div>
+                <div class="skill html"></div>
               </div>
 
               <p>CSS</p>
               <div class="container">
-                <div class="skills css">80%</div>
+                <div class="skill css"></div>
               </div>
               
               <p>JavaScript</p>
               <div class="container">
-                <div class="skills js">75%</div>
+                <div class="skill js"></div>
               </div>
               
               <p>JAVA</p>
               <div class="container">
-                <div class="skills java">80%</div>
+                <div class="skill java"></div>
               </div>
               
               <p>SQL</p>
               <div class="container">
-                <div class="skills sql">85%</div>
+                <div class="skill sql"></div>
               </div>
 
               <p>EDI</p>
               <div class="container">
-                <div class="skills edi">90%</div>
+                <div class="skill edi"></div>
               </div>
 
             </div>
@@ -196,20 +194,18 @@
           <p>Select a project area.</p>
         </div>
 
+        <!-- Project Links -->
         <div class="project-links">
-
-          <!-- Bootstrap Buttons -->
-          <button type="button" class="img-three" onclick="document.location='html-css-projects.html'">HTML / CSS</button>
-          <button type="button" class="img-three" onclick="document.location='javascript-projects.html'">JavaSript</button>
-          <button type="button" class="img-three" onclick="document.location='angular-projects.html'">Angular</button>
-          <button type="button" class="img-three" onclick="document.location='https://github.com/bokhaus/ProgrammingPortfolio'">GitHub</button>
-         
+            <a href="html-css-projects.html" class="button" target="_blank">HTML / CSS</a>
+            <a href="javascript-projects.html" class="button" target="_blank">JavaSript</a>
+            <a href="angular-projects.html" class="button" target="_blank">Angular</a>
+            <a href="https://github.com/bokhaus/ProgrammingPortfolio" class="button" target="_blank">GitHub</a>
         </div>
-        
+
         
         <div class="project-resume">
           <br>
-          <p>Download my resume.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/assets/docs/Bok Stylized_Resume 2020-06.pdf" class="btn-resume" role="button" target="_blank">Resume</a></p>
+          <p>Download my resume. <a href="/assets/docs/Bok Stylized_Resume 2020-06.pdf" class="button-medium" target="_blank">Resume</a></p>
         </div>
 
       </section>
@@ -219,33 +215,53 @@
 
     <!-- Contact -->
       <section class="section-info-contact" id="contact">
+        
+        <div class="contact-section">
           <h2>Contact Me</h2>
-          <hr style="width:200px" class="w3-opacity">
-      
-          <div class="w3-section">
-            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Holgate, Ohio</p>
-            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Phone: (419) 438-1138</p>
-            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>&nbsp; Email: brian.bokusmc@gmail.com</p>
-          </div><br>
-          <p>Let's get in touch. Send me a message:</p>
-          <!-- <div class="cognito">
+          <!-- <hr style="width:230px" > -->
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Holgate, Ohio</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>&nbsp; Phone: (419) 438-1138</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>&nbsp; Email: brian.bokusmc@gmail.com</p>
+        </div><br>
+
+        <div class="container-form">
+          <div style="text-align:center">
+            <!-- <h2>Contact Us</h2> -->
+            <p>Let's get in touch. Send me a message:</p>
+          </div>
+          <div class="row">
+            
+            <div class="column">
+              <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <button class="button-medium" type="submit">
+                  <i class="fa fa-paper-plane"></i>&nbsp;SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>  
+          
+        
+          
+           <!-- <div class="cognito">
             <script src="https://www.cognitoforms.com/s/hqHMGIhQC0aHPyBj4ydFNA"></script>
             <script>Cognito.load("forms", { id: "3" });</script>
           </div> -->
-        
-          <form>
-            <p><input class="name" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="email" type="text" placeholder="Email" required name="Email"></p>
-            <p><input class="subject" type="text" placeholder="Subject" required name="Subject"></p>
-            <p><input class="message" type="text" placeholder="Message" required name="Message"></p>
-            <p>
-              <button class="btn btn-secondary" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-              </button>
-            </p>
-          </form>
       </section>
       <!-- End Contact -->
+      
   </div>
   <!-- End Main -->
 

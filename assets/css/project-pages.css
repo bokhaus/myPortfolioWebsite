@@ -1,17 +1,52 @@
-::root {
-    font-size: 62.5%;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    color: #faead6; 
-    
+    /* color: #faead6;  */
 }
 
 body {
-    min-height: 100%;
-    background-color:  #000000;  /*Black*/
+    min-height: 10vh;
+    background-color:  #000000;  
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    background: #32cd32;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) translateY(-90%) scale(10);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    text-align: center;
+}
+.content h2 {
+    font-size: 3em;
+    color: antiquewhite;
+}
+.content p {
+    font-size: 1.2em;
+    color: antiquewhite;
 }

@@ -56,7 +56,7 @@ body {
     /* outline: 2px dotted firebrick; */
 }
 .heading h1 { 
-    color: limegreen; 
+    color: #32cd32; 
     font-size: 70px; 
     /* outline: 2px solid tomato; */
 } 
@@ -102,12 +102,15 @@ body {
     /* outline: 3px solid pink; */
 }
 .about h2{
+    font-weight: lighter;
+    font-size: 3rem;
     text-align: left;
     /* padding: 3rem 3rem; */
     border-bottom: .3rem solid #242121;
 }
 .about p{
     text-align: justify;
+    padding-top: 1em;
 }
 .img-one  {
     display: flex;
@@ -133,7 +136,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    outline: 2px solid darkolivegreen;
+    /* outline: 2px solid darkolivegreen; */
   }
 
 /* New Skills Section */
@@ -184,12 +187,17 @@ body {
     margin-left: 3em;
 }
 /* Child Element */
-.skills-header {
+.skills-header { 
     flex: 1;
     text-align: justify;
 }
 .skills-header h2 {
+    font-weight: lighter;
+    font-size: 3rem;
     border-bottom: .3rem solid #242121;
+}
+.skills-header p{
+    padding-top: 1em;
 }
 
 /* Child Element */
@@ -201,10 +209,12 @@ body {
 .slider {
     flex: 1;
     width: 50%;
-    margin-top: 4em;
+    margin-top: 2em;
     /* outline: 2px solid white; */
 }
 .slider h2 {
+    font-weight: lighter;
+    font-size: 2rem;
     border-bottom: .3rem solid #242121;
     /* outline: 2px solid darkolivegreen; */
 }
@@ -219,36 +229,36 @@ body {
     background-color: #ddd;
 }
   
-.skills {
+.skill {
     text-align: right;
     padding-right: 10px;
-    color: white;
-    outline: 2 solid red;
+    height: 1em;
+    outline: 1px solid  #32cd32;
 }
   
 .html {
     width: 90%; 
-    background-color: #504545; 
+    background-color: #242121; 
 }
 .css {
     width: 80%; 
-    background-color: #504545;
+    background-color: #242121;
 }
 .js {
     width: 75%; 
-    background-color: #504545;
+    background-color: #242121;
 }
 .java {
     width: 80%; 
-    background-color: #504545;
+    background-color: #242121;
 }
 .sql {
     width: 85%; 
-    background-color: #504545;
+    background-color: #242121;
 }
 .edi {
     width: 90%; 
-    background-color: #504545;
+    background-color: #242121;
 }
 /* #4CAF50 ,   #2196F3 , #f44336 ,  #aa2424 , #2c178b , #a51681*/
 
@@ -256,7 +266,7 @@ body {
 /*********** Project Section ***********/
 .section-info-projects {
     width: 100%;
-    /* height: 120vh; */
+    height: 100vh;
     /* outline: 3px solid ivory; */
 }
 .project-header {
@@ -266,12 +276,16 @@ body {
     /* outline: 2px solid tomato; */
 }
 #projects h2 {
+    font-weight: lighter;
+    font-size: 3rem;
     border-bottom: .3rem solid #242121;
 }
 #projects p {
+    font-size: 1.2em;
     margin: 0 0 0 3rem;
 }
 .project-links {
+    /* background-color: #1d1c1c; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -279,17 +293,30 @@ body {
     align-items: center;
     margin-top: 10rem;
     margin-bottom: 5rem;
-    /* outline: 2px solid wheat; */
+    /* outline: 2px solid #faebd7; */
 }
-.img-three {
+.button {
+    background-color:#242121;
+    border: 2px solid  #32cd32;
     width: 10rem;
     height: 10rem;
     padding: .2rem;
-    background-color: gray;
-    border-radius: 50%;
     margin: 3rem;
-    /* outline: 10px solid green; */
-} 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* outline: 2px dotted aquamarine; */
+}
+.button:hover {
+    background-color: #32cd32;;
+    border: 2px solid  #92a392;
+    font-weight: bold;
+    color: #242121;
+    border-radius: 50%;
+    /* outline: 2px dotted aquamarine; */
+}
 .project-resume {
     display: flex;
     justify-content: center;
@@ -298,34 +325,98 @@ body {
     padding: 2.25rem;
     /* outline: 2px solid red; */
 }
-.btn-resume{
-    /* outline: 2px dotted goldenrod; */
-}
-.btn-resume {
-    background-color: #242121; /* Green #4CAF50*/
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50px;
+.button-medium {
     font-size: 16px; 
-} 
-.btn-resume:hover {
-    background-color: #4CAF50;
-} 
+    background-color:#242121;
+    border: 2px solid  #32cd32;
+    width: 8rem;
+    height: 4.5rem;
+    margin: 1rem 0 0 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* outline: 2px solid wheat; */
+}
+.button-medium:hover {
+    background-color: #32cd32;;
+    font-weight: bold;
+    color: #242121;
+    border: 2px solid  #92a392;
+}
 
 /*********** Contact Section ***********/
 .section-info-contact {
+    font-size: 1.5em;
     width: 100%;
     height: 110vh;
-    padding-top: 5rem;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* outline: 3px solid turquoise; */
 } 
-
-
-
-
-
-
+.contact-section {
+    font-weight: lighter;
+    width: 100%;
+    height: 25%;
+    text-align: left;
+    padding-left: 1.5rem;
+    /* margin: 3rem 0 0 1rem; */
+    /* outline: 2px dotted violet; */
+}
+.contact-section h2 {
+    font-weight: lighter;
+    font-size: 2rem;
+    width: 13%;
+    margin-bottom: 2rem;
+    /* border-bottom: .3rem solid #242121; */
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  /* Style the container/contact section */
+  .container-form {
+    border-radius: 5px;
+    background-color: #000000;
+    margin-top: -17%;
+    margin-left: 35%;
+    /* outline: 2px solid firebrick; */
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 75%;
+    margin-top: 2rem;
+    padding: 20px;
+    /* outline: 2px solid firebrick; */
+  }
+  label {
+      /* margin-right: 100px; */
+      /* outline: 2px solid firebrick; */
+  }
+  .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
