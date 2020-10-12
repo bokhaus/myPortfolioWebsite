@@ -8,5 +8,7 @@ Colors Used:
     Text
     color: #faebd7; (Antique White)
 
-    Slider 
-    color: #504545 (Medium Gray) or #32cd32
+    Slider and Buttons
+    color: #504545 (Medium Gray) or #32cd32 (green)
+
+    buttons-outline: #32cd32 (green)

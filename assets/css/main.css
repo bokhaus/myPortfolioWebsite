@@ -3,6 +3,10 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo Script:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan Script:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo Script Swash Caps:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum Brush Script:300,400,500,600,700,800,900&display=swap');
 
 /*********** Overall CSS Attributes ***********/
 ::root {
@@ -32,7 +36,24 @@ body {
     margin: .5rem .5rem 0 3.5rem;
     /* border: 2px solid chartreuse; */
 }
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+/* @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px  #32cd32, 0 0 40px  #32cd32, 0 0 50px  #32cd32, 0 0 60px  #32cd32, 0 0 70px  #32cd32;
+    }
 
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #85e485, 0 0 40px #85e485, 0 0 50px #85e485, 0 0 60px #85e485, 0 0 70px #85e485, 0 0 80px #85e485;
+    }
+} */
 /*********** Home Section ***********/
 .flex-column-one {
     display: flex;
@@ -57,12 +78,14 @@ body {
 }
 .heading h1 { 
     color: #32cd32; 
-    font-size: 70px; 
+    font-family: cursive;
+    font-size: 150px; 
+    
     /* outline: 2px solid tomato; */
 } 
 .heading h3 { 
-    color: #ffffff; 
-    font-size: 20px; 
+    color: #5e1515; 
+    font-size: 30px; 
 }
 /* Image Heading */
 .image-home {
@@ -297,7 +320,7 @@ body {
 }
 .button {
     background-color:#242121;
-    border: 2px solid  #32cd32;
+    border: 3px solid  #32cd32;
     width: 10rem;
     height: 10rem;
     text-decoration: none;
@@ -312,7 +335,7 @@ body {
 }
 .button:hover {
     background-color: #32cd32;;
-    border: 2px solid  #92a392;
+    border: 3px solid  #92a392;
     font-weight: bold;
     color: #242121;
     border-radius: 50%;
@@ -330,7 +353,7 @@ body {
     font-size: 16px; 
     text-decoration: none;
     background-color:#242121;
-    border: 2px solid  #32cd32;
+    border: 3px solid  #32cd32;
     width: 8rem;
     height: 4.5rem;
     margin: 1rem 0 0 3rem;
