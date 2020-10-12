@@ -13,6 +13,7 @@ body {
     background-color:  #000000;  
 }
 
+/* Curved Upper Border */
 section {
     position: relative;
     width: 100%;
@@ -22,6 +23,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    outline: 2px solid firebrick;
 }
 section::before {
     content: '';
@@ -36,6 +38,7 @@ section::before {
     transform: translateX(-50%) translateY(-90%) scale(10);
 }
 
+/* Header Title */
 .content {
     position: relative;
     z-index: 1;
@@ -45,8 +48,25 @@ section::before {
 .content h2 {
     font-size: 3em;
     color: antiquewhite;
+    margin-bottom: 2rem;
 }
 .content p {
     font-size: 1.2em;
     color: antiquewhite;
+}
+
+/* Link area */
+.project-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    font-size: 1.5rem;
+    width: 50%;
+    /* outline: 2px solid firebrick; */
+}
+.list li {
+    list-style-type: none;
+
 }

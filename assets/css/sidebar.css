@@ -64,11 +64,13 @@
     right: 0;
     width: 60px;
     height: 60px;
-    background: #000000;  /* Black*/
+    background: #000000; 
     cursor: pointer;
 }
-.toggle.active {
-    background: #242121; /* dark gray*/
+
+/* Hamburger upper right corner */
+/* .toggle.active {
+    background: #242121; 
     border-radius: 50%;
 }
 .toggle::before {
@@ -84,7 +86,7 @@
 }
 .toggle.active::before {
     content: '\f00d';
-}
+} */
 
 
 
