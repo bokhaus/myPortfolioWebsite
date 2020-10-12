@@ -55,6 +55,7 @@ section::before {
     color: antiquewhite;
 }
 
+/* Possible do Grid layout with Images instead */
 /* Link area */
 .project-lists {
     display: flex;
